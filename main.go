@@ -1,9 +1,13 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/ArthurRock/goAlpha/variables"
 )
 
 func main() {
-	variables.MuestroEnteros()
+	estado, texto := variables.ConviertoText(34)
+	fmt.Println(estado)
+	fmt.Println(texto)
 }
