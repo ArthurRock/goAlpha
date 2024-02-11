@@ -70,7 +70,7 @@ func main() {
 		fmt.Printf("Esto es %s \n", os)
 	}
 
-	intprint, strprint := ejercicios.Ejec("689")
+	intprint, strprint := ejercicios.Ejec("df")
 
 	fmt.Println(strconv.FormatInt(int64(intprint), 10) + " " + strprint)
 }
