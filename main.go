@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/ArthurRock/goAlpha/ejercicios"
+	"github.com/ArthurRock/goAlpha/iteraciones"
+	"github.com/ArthurRock/goAlpha/variables"
 )
 
 func main() {
@@ -27,8 +28,20 @@ func main() {
 			fmt.Printf("%s \n", os)
 		}
 	*/
-	estado, texto := ejercicios.Ejec("250")
-	fmt.Println(estado)
-	fmt.Println(texto)
 
+	/*
+		estado, texto := ejercicios.Ejec("679")
+		fmt.Println(estado)
+		fmt.Println(texto)
+
+		teclado.IngresoNumero()
+	*/
+
+	for i := 0; i < 3; i++ {
+		fmt.Println("Fuck")
+	}
+
+	iteraciones.Iterar()
+
+	variables.MuestroEnteros()
 }
