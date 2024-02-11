@@ -25,7 +25,6 @@ func RestoVariables() {
 
 func ConviertoText(numero int) (bool, string) {
 
-	var texto string
-	texto = strconv.Itoa(numero)
-	return true, texto
+	texto := strconv.Itoa(numero)
+	return false, texto
 }

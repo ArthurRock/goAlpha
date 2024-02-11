@@ -41,7 +41,15 @@ func main() {
 		fmt.Println("Fuck")
 	}
 
+	// Imprimir los numeros
 	iteraciones.Iterar()
 
 	variables.MuestroEnteros()
+
+	variables.RestoVariables()
+
+	estado, texto := variables.ConviertoText(23)
+	fmt.Println(estado)
+	fmt.Println(texto)
+
 }
