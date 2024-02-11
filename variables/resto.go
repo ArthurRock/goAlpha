@@ -27,4 +27,5 @@ func ConviertoText(numero int) (bool, string) {
 
 	texto := strconv.Itoa(numero)
 	return false, texto
+
 }

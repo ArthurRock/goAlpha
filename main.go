@@ -2,7 +2,10 @@ package main
 
 import (
 	"fmt"
+	"runtime"
+	"strconv"
 
+	"github.com/ArthurRock/goAlpha/ejercicios"
 	"github.com/ArthurRock/goAlpha/iteraciones"
 	"github.com/ArthurRock/goAlpha/variables"
 )
@@ -52,4 +55,22 @@ func main() {
 	fmt.Println(estado)
 	fmt.Println(texto)
 
+	if os := runtime.GOOS; os == "Linux." || os == "OS X." {
+		fmt.Println("No es Windows, es ", os)
+	} else {
+		fmt.Println(runtime.GOARCH)
+	}
+
+	switch os := runtime.GOOS; os {
+	case "linux":
+		fmt.Println("Esto es Linux")
+	case "darwin":
+		fmt.Println("Esto es Darwin")
+	default:
+		fmt.Printf("Esto es %s \n", os)
+	}
+
+	intprint, strprint := ejercicios.Ejec("689")
+
+	fmt.Println(strconv.FormatInt(int64(intprint), 10) + " " + strprint)
 }
