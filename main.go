@@ -40,12 +40,7 @@ func main() {
 		teclado.IngresoNumero()
 	*/
 
-	for i := 0; i < 3; i++ {
-		fmt.Println("Fuck")
-	}
-
 	// Imprimir los numeros
-	iteraciones.Iterar()
 
 	variables.MuestroEnteros()
 
@@ -70,7 +65,12 @@ func main() {
 		fmt.Printf("Esto es %s \n", os)
 	}
 
-	intprint, strprint := ejercicios.Ejec("df")
+	intprint, strprint := ejercicios.Ejec("34")
 
 	fmt.Println(strconv.FormatInt(int64(intprint), 10) + " " + strprint)
+
+	iteraciones.Iterar(20)
+
+	ejercicios.ValidarIngresoTeclado()
+
 }
