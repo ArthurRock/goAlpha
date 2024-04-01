@@ -5,10 +5,11 @@ import (
 	"strconv"
 )
 
-func ValidarIngresoTeclado() {
+func ValidarIngresoTeclado() string {
 
 	var inputText string
 	var errdata = 0
+	var texto string
 
 	for errdata != 1 {
 
@@ -24,8 +25,11 @@ func ValidarIngresoTeclado() {
 			fmt.Printf("Tabla de multiplicar del num " + strconv.Itoa(num) + "\n")
 			errdata = 1
 			for i := 1; i < 11; i++ {
-				fmt.Printf(strconv.Itoa(i) + " * " + strconv.Itoa(num) + " = " + strconv.Itoa(num*i) + "\n")
+				texto += fmt.Sprintf(strconv.Itoa(i) + " * " + strconv.Itoa(num) + " = " + strconv.Itoa(num*i) + "\n")
 			}
+			texto += "\n"
 		}
 	}
+
+	return texto
 }

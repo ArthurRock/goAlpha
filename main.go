@@ -6,6 +6,7 @@ import (
 	"strconv"
 
 	"github.com/ArthurRock/goAlpha/ejercicios"
+	"github.com/ArthurRock/goAlpha/files"
 	"github.com/ArthurRock/goAlpha/iteraciones"
 	"github.com/ArthurRock/goAlpha/variables"
 )
@@ -71,6 +72,11 @@ func main() {
 
 	iteraciones.Iterar(20)
 
-	ejercicios.ValidarIngresoTeclado()
+	//fmt.Println(ejercicios.ValidarIngresoTeclado())
+
+	//files.GrabaTabla()
+	//files.SumaTabla()
+
+	files.LeoArchivo2()
 
 }
